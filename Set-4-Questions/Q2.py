@@ -1,11 +1,4 @@
 def solve_apartment_matching():
-    """
-    Solves the apartment matching problem using a two-pointer technique.
-
-    The most efficient way to solve this is to sort both the applicants'
-    desired sizes and the available apartment sizes. Then, we use two
-    pointers to walk through both lists simultaneously.
-    """
     
     try:
         first_line = input().split()
@@ -54,7 +47,7 @@ def solve_apartment_matching():
                 applicant_idx += 1
                 apartment_idx += 1
 
-        print(successful_placements)
+        print(f"Output: ",successful_placements)
 
     except ValueError:
         print("Error: All inputs must be integers.")
