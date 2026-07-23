@@ -33,6 +33,16 @@ void bfs(int start, Graph& adjList){
     }
 }
 
+void dfsAll(Graph& adjList, int numNode){
+    unordered_set<int> visited;
+
+    for (int node =0; node < numNode; node++){
+        if (!visited.count(node)){
+            dfs(numNode,adjList,visited);
+        }
+    }
+}
+
 int main() {
     Graph adjList;
 
